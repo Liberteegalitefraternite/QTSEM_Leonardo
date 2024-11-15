@@ -6,3 +6,4 @@
 ^data-raw$
 ^LICENSE\.md$
 ^SurveyResults.rda$
+^\.github$

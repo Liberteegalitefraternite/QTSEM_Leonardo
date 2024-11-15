@@ -2,17 +2,11 @@
 % Please edit documentation in R/QTSEM-package.R
 \docType{package}
 \name{QTSEM-package}
+\alias{QTSEM}
 \alias{QTSEM-package}
-\title{QTSEM: A Package about Qingtai-Tibet SEM Modelling on Travel Behavior}
+\title{QTSEM: A Package about Conducting Structural Equation Modeling Analysis for Travel Behavior on Qinghai-Tibet Plateau}
 \description{
-More about what it does (maybe more than one line) Use four spaces when indenting paragraphs within the Description.
-
-This package is an exercise in package creation using
-R studio. The package includes a sample function and
-a sample dataset with their respective documentation.
-}
-\references{
-\url{https://github.com/paezha/packr}
+Structural equation modeling (SEM) is a statistical technique that combines factor analysis and multiple regression to evaluate and test complex relationships between observed and latent variables within a hypothesized model. This package utilizes this method to analyze a travel behavior and satisfaction-related questionnaire dataset that was collected during July to August on Qinghai-Tibet Plateau.
 }
 \seealso{
 Useful links:
@@ -21,15 +15,5 @@ Useful links:
   \item Report bugs at \url{https://github.com/Horan517/QTSEM/issues}
 }
 
-
-Useful links:
-\itemize{
-  \item \url{https://github.com/Horan517/QTSEM}
-  \item Report bugs at \url{https://github.com/Horan517/QTSEM/issues}
-}
-
-}
-\author{
-Haoran Xu, School of Earth, Environment and Society, McMaster University \email{xu976@mcmaster.ca}
 }
 \keyword{internal}

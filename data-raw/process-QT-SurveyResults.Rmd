@@ -1,0 +1,42 @@
+---
+title: "process-QT-SurveyResults"
+author: "Haoran Xu"
+date: "2024-11-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I have an Excel file with data that was collected in the questionnaire during July-August on Qinghai-Tibet Plateau.
+
+The name of the file is `QT_SurveyResults.xlsx` and it contains only one sheet:
+
+- Energy_Emissions: the data
+
+To make it easy to share this dataset I will read it, convert it to an `.RData` file, and then document it so that it can be bundled with package `QTSEM`.
+
+Load the packages needed to preprocess the data:
+```{r}
+library(tidyverse)
+library(readxl)
+```
+
+Read the Excel file as a dataframe:
+```{r}
+SurveyResults <- read_excel("QT_SurveyResults.xlsx")
+```
+
+The dataframe consists of 813 observations of 43 variables. Get a summary of the dataframe:
+```{r}
+summary(SurveyResults)
+```
+
+The sources of these data are collected with Dr. Huaxiong Jiang, Kaifei Guo and Lili Zhang on Qinghai-Tibet Plateau during July to August in 2022.
+
+Save to data folder:
+```{r}
+usethis::use_data(SurveyResults,
+                  overwrite = TRUE)
+```
